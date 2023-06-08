@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Validation</title>
+</head>
+<body>
+    <form action="">
+        Email:
+        <input type="email" id="email">
+        <button onclick="emailValidation()" >Check</button>
+        <script>
+            function emailValidation(){
+                let email=document.getElementById("email").value;
+                let mailExp=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
+                if(mailExp.test(email)){
+                    alert("You have entered an valid email address!");
+                }
+                else{
+                    alert("You have entered an invalid email address!")
+                }
+
+                let x=4+"4";
+                document.getElementById
+            }
+        </script>
+    </form>
+</body>
+</html>
